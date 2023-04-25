@@ -1,0 +1,19 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.home{
+    background-image: url(../images/YSL/ysl-main.png);
+    background-size: 1998px 1230px;
+    background-repeat: no-repeat;
+}
+.showereel .sc-watch span::before{
+    background-image: url(../images/play.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

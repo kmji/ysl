@@ -1,0 +1,241 @@
+@import './reset.css';
+@import './common.css';
+
+
+
+body{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    height: 100vh;
+    width: 71px;
+    padding: 28px 0;
+    background: #f2f0ea;
+    z-index: 999;
+}
+header .header-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-right: 3px solid #000;
+}
+header .header-wrap .logo a{
+    margin-top: 55px;
+    display: block;
+    writing-mode: tb-rl;
+    transform: rotate(270deg);
+    height: 30px;
+}
+header .header-wrap .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header .header-wrap .logo h1{
+    font-size: 30px;
+    letter-spacing: -3px;
+    padding: 0 5px 0 0;
+}
+header .header-wrap .logo span{
+    font-family: "SweetSansPro-Medium";
+    font-size: 0.5px;
+}
+header .header-wrap .btn-menu{
+    width: 35px;
+    height: 55px;
+    position: relative;
+}
+header .header-wrap .menu{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    height: 100%;
+    width: 2.5px;
+    background: #000;
+}
+header .header-wrap .menu::before{
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 2.5px;
+    height: 100%;
+    background: #000;
+    content: '';
+}
+header .header-wrap .menu::after{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 2.5px;
+    height: 100%;
+    background: #000;
+    content: '';
+}
+header .header-wrap .btn-menu.active .menu{
+    height:80%;
+    transform: rotate(45deg);
+}
+header .header-wrap .btn-menu.active .menu::after{
+    left: 0px;
+    height:98%;
+    transform: rotate(-90deg);
+}
+header .header-wrap .btn-menu.active .menu::before{
+    width: 0;
+}
+header .menu-wrap.active{
+    display: block;
+}
+header .menu-wrap{
+    position: absolute;
+    top: 0;
+    left: 71px;
+    width: 100vw;
+    height: 100%;
+    background: #f2f0ea;
+    padding: 28px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+header .menu-wrap .menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 47px 0 54px 0;
+    width: 92.5%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+header .menu-wrap .menu-item:hover a{
+    color: #ccc;
+}
+header .menu-wrap .menu-item.active a{
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+header .menu-wrap .menu-item a{
+    display: block;
+    text-align: center;
+    padding: 0 30px;
+    line-height: 1;
+    font-size: 96px;
+}
+header .menu-wrap .menu-item.showereel{
+    margin-left: -270px;
+}
+header .menu-wrap .menu-item.services{
+    margin-left: -250px;
+}
+header .menu-wrap .menu-item.gift{
+    margin-left: 200px;
+}
+header .menu-wrap .btn-round{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin-left: 650px;
+}
+header .menu-wrap .btn-round span{
+    position: relative;
+    text-align: center;
+    font-family: "Plantin";
+    font-size: 16px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .menu-wrap .btn-round span::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #000;
+    content: '';
+    z-index: -1;
+    transition: 0.3s;
+}
+header .menu-wrap .btn-round span::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: 0.3s;
+    content: '';
+}
+header .menu-wrap .btn-round:hover span::before{
+    width: 190px;
+    height: 190px;
+}
+header .menu-wrap .btn-round:hover span::after{
+    width: 170px;
+    height: 170px;
+    border: 1px solid #fff;
+}
+header .menu-wrap .menu-footer{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 92.5%;
+    padding: 0 60px 28px;
+    font-family: "SweetSansPro-Bold";
+    font-size: 12px;
+}
+header .menu-wrap .menu-footer .copy{
+    font-weight: bold;
+}
+header .menu-wrap .menu-footer a{
+    position: relative;
+}
+header .menu-wrap .menu-footer a:hover::before{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #000;
+    content: '';
+    animation: left 0.3s ease-in forwards;
+}
+header .menu-wrap .menu-footer a:hover::after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: #000;
+    content: '';
+    animation: right 0.3s ease-in forwards;
+}
+@keyframes left {
+    0%{left: 50%; width: 0;}
+    100%{left: 0%; width: 50%;}
+}
+@keyframes right {
+    0%{width: 0;}
+    100%{width: 50%;}
+}

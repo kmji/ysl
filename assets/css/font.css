@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Boutique';
+    src: url(../font/Boutique-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Plantin';
+    src: url(../font/PlantinStd.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'SweetSansPro';
+    src: url(../font/SweetSansPro-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'SweetSansPro';
+    src: url(../font/SweetSansPro-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Light.woff2) format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Bold.woff2) format('woff2');
+    font-weight: 700;
+}

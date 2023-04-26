@@ -1,6 +1,6 @@
 :root{
     --font-kr:'Pretendard',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-    --font-en1:'Boutique',serif;
+    --font-en1:'Boutique',sans-serif;
     --font-en2:'SweetSansPro',serif;
 }
 *{margin:0;padding:0;font:inherit;color:inherit;}
@@ -25,5 +25,5 @@ body{
     font-size: 16px;
     line-height: 1.2;
     color: #000;
-    font-family: var(--font-kr);
+    font-family: var(--font-en1);
 }

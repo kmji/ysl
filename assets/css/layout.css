@@ -1,3 +1,4 @@
+@import './fonts.css';
 @import './reset.css';
 @import './common.css';
 
@@ -43,10 +44,6 @@ header .header-wrap .logo h1{
     font-size: 30px;
     letter-spacing: -3px;
     padding: 0 5px 0 0;
-}
-header .header-wrap .logo span{
-    font-family: "SweetSansPro-Medium";
-    font-size: 0.5px;
 }
 header .header-wrap .btn-menu{
     width: 35px;
@@ -130,7 +127,7 @@ header .menu-wrap .menu-item.active a{
 header .menu-wrap .menu-item a{
     display: block;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 35px 5px 30px;
     line-height: 1;
     font-size: 96px;
 }
@@ -143,57 +140,6 @@ header .menu-wrap .menu-item.services{
 header .menu-wrap .menu-item.gift{
     margin-left: 200px;
 }
-header .menu-wrap .btn-round{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    margin-left: 650px;
-}
-header .menu-wrap .btn-round span{
-    position: relative;
-    text-align: center;
-    font-family: "Plantin";
-    font-size: 16px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header .menu-wrap .btn-round span::before{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    background: #000;
-    content: '';
-    z-index: -1;
-    transition: 0.3s;
-}
-header .menu-wrap .btn-round span::after{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    border: 1px solid #000;
-    transition: 0.3s;
-    content: '';
-}
-header .menu-wrap .btn-round:hover span::before{
-    width: 190px;
-    height: 190px;
-}
-header .menu-wrap .btn-round:hover span::after{
-    width: 170px;
-    height: 170px;
-    border: 1px solid #fff;
-}
 header .menu-wrap .menu-footer{
     position: absolute; 
     bottom: 0;
@@ -203,6 +149,7 @@ header .menu-wrap .menu-footer{
     width: 92.5%;
     padding: 0 60px 28px;
     font-family: "SweetSansPro-Bold";
+    font-style: italic;
     font-size: 12px;
 }
 header .menu-wrap .menu-footer .copy{

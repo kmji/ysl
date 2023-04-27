@@ -2,8 +2,6 @@
 @import './reset.css';
 @import './common.css';
 
-
-
 body{
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -11,6 +9,7 @@ body{
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
+/* HEADER */
 header{
     position: fixed;
     top: 0;left: 0;

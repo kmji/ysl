@@ -18,6 +18,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* HOME */
 .home{
     position: relative;
     display: flex;
@@ -136,7 +137,7 @@
     0%{transform: translateY(0%);}
     100%{transform: translateY(-50%);}
 }
-/* clinique */
+/* CLINIQUE */
 .clinique{
     background: #f2f0ea;
     height: 100%;
@@ -195,81 +196,7 @@
     font-size: 19px;
     line-height: 1.3;
 }
-/* .showereel */
-.showereel{
-    background-image: url(../images/YSL/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 81vw;
-    position: relative;
-}
-.showereel .sc-txt{
-    margin: 28px 0;
-    height: calc(100% - 56px);
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    line-height: 0.8;
-    font-size: 116px;
-    font-weight: 400;
-    border-right: 1px solid #000;
-}
-.showereel .sc-txt h3.txt1{
-    margin-left: 175px;
-}
-.showereel .sc-txt h3.txt3{
-    margin-left: 260px;
-}
-.showereel .sc-txt h3.txt4{
-    margin-left: 310px;
-}
-.showereel .sc-txt h3.txt5{
-    margin-left: 190px;
-}
-.showereel .sc-txt h3.txt6{
-    margin-left: 635px;
-    z-index: 1;
-}
-.showereel .sc-watch{
-    position: absolute;
-    bottom: 28px;
-    left: 0;
-    margin-left: 70px;
-    margin-top: -95px;
-    display: inline-block;
-}
-.showereel .sc-watch img{
-    width: 750px;
-    height: 450px;
-}
-.showereel .sc-watch span{
-    display: block;
-    position: absolute;
-    bottom: 90px;
-    right: 30px;
-    color: #fff;
-    font-size: 36px;
-}
-.showereel .sc-watch span::before{
-    position: absolute;
-    top: 8px;
-    left: -50px;
-    display: block;
-    width: 1.875rem;
-    height: 1.375rem;
-    background-position: 50%;
-    content: '';
-}
-.showereel .sc-watch p{
-    position: absolute;
-    right: -260px;
-    bottom: 0;
-    font-size: 36px;
-    line-height: 30px;
-}
-/* .gallery */
+/* GALLERY */
 .gallery{
     background:#000;
     color: #fff;
@@ -406,7 +333,7 @@
     background: #000;
     transition: 0.3s;
 }
-/* .services */
+/* SERVICES */
 .services{
     background:#f2f0ea;
     width: 100vw;
@@ -498,7 +425,8 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.services1 .sc-list .category-title p{
+.services1 .sc-list .category-title span{
+    display: block;
     animation: category-title 5s infinite linear;
 }
 @keyframes category-title {
@@ -597,7 +525,7 @@
 .services1 .sc-list.open .child-item a{
     padding: 23px 71px;
 }
-/* .gift_Card */
+/* GIFT */
 .gift{
     background:#f2f0ea;
     width: 93vw;
@@ -631,12 +559,12 @@
     font-size: 76px;
     line-height: 1.1;
 }
-.gift .txt-area .sc-desc p{
+.gift .txt-area .sc-desc h4{
     width: 600px;
     font-size: 19px;
     line-height: 1.5;
 }
-.gift .txt-area .sc-desc p:first-child{
+.gift .txt-area .sc-desc h4:first-child{
     margin-bottom: 24px;
 }
 .gift .txt-area button{
@@ -645,7 +573,7 @@
 .gift .txt-area button span{
     font-size: 19px;
 }
-/* .contact */
+/* CONTACT */
 .contact{
     background: #000;
     width: 100vw;

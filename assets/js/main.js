@@ -1,5 +1,5 @@
 $(function(){
-
+    /* HEADER */
     gsap.set('header .menu-wrap .menu-item',{
         opacity:0,
         yPercent:100,
@@ -20,6 +20,7 @@ $(function(){
         menu.restart();
     })
   
+  /* SHRINK-INNER */
    const frame1 = gsap.to('.shrink-inner',{
         scrollTrigger:{
             trigger:".hori-inner",
@@ -36,7 +37,7 @@ $(function(){
             return window.innerWidth
         }
    })
-
+   /* SHRINK-INNER2 */
    const frame2 = gsap.to('.shrink-inner2',{
         scrollTrigger:{
             trigger:".sub1-4",
@@ -53,7 +54,7 @@ $(function(){
             return window.innerWidth
         }
    })
-
+   /* HOME */
    const page_home = gsap.timeline({
         scrollTrigger: {
             trigger: ".home",
@@ -92,27 +93,7 @@ $(function(){
         ease:'none'
     });
 
-    const page_showereel = gsap.timeline({
-          scrollTrigger: {
-              trigger: ".showereel",
-              containerAnimation: frame1,
-              start: "-50% 0%",
-              end:"100% 50%",
-              // markers:true,
-              scrub:1,
-          },
-          ease:'none'
-    }) 
-
-    page_showereel
-        .addLabel('a')
-        .to('.showereel .txt3',{
-          xPercent:10
-        },'a')
-        .to('.showereel .txt5',{
-          xPercent:-10
-        },'a')
-      
+  /* GALLERY */
     const page_gallery = gsap.timeline({
       scrollTrigger: {
           trigger: ".gallery",
@@ -168,56 +149,5 @@ $(function(){
         .to('.services .sc-title h3.txt6',{
           x:400
         },'a')
-
-   gsap.to('.motion1', {
-        scale:3,
-        scrollTrigger: {
-            trigger: ".section1",
-            containerAnimation: frame1,
-            start: "0% 0%",
-            end:"100% 50%",
-            // markers:true,
-            scrub:1,
-        },
-        ease:'none'
-    });
-
-    gsap.to('.motion2', {
-        scale:3,
-        scrollTrigger: {
-            trigger: ".section4",
-            containerAnimation: frame1,
-            start: "0% 50%",
-            end:"100% 50%",
-            // markers:true,
-            scrub:1,
-        },
-        ease:'none'
-    });
-
-    gsap.to('.motion3', {
-        scale:3,
-        scrollTrigger: {
-            trigger: ".sub1-1",
-            start: "0% 50%",
-            end:"100% 50%",
-            // markers:true,
-            scrub:1,
-        },
-        ease:'none'
-    });
-
-    gsap.to('.motion4', {
-        scale:3,
-        scrollTrigger: {
-            trigger: ".sub2-1",
-            containerAnimation: frame2,
-            start: "30% 0%",
-            end:"100% 50%",
-            // markers:true,
-            scrub:1,
-        },
-        ease:'none'
-    });
 
 })
